@@ -54,7 +54,7 @@ view: bm_f_unsturct__5y {
 
   dimension: sunsusong_cnt {
     type: number
-    sql: ${TABLE}.sunsusong_cnt ;;
+    sql: abs(${TABLE}.sunsusong_cnt) ;;
   }
 
   measure: count {

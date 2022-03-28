@@ -29,7 +29,7 @@ view: bm_f_card_anal_5y {
 
   dimension: sunsusong_cnt {
     type: number
-    sql: ${TABLE}.sunsusong_cnt ;;
+    sql: abs(${TABLE}.sunsusong_cnt) ;;
   }
 
   dimension_group: use_dt {
