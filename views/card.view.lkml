@@ -32,6 +32,11 @@ view: card {
     sql: ${TABLE}.Out ;;
   }
 
+  dimension: SUMCOUNT {
+    type: number
+    sql: ${TABLE}.Out + ${TABLE}.`IN` ;;
+  }
+
   dimension: station {
     type: string
     sql: ${TABLE}.Station ;;
