@@ -11,3 +11,5 @@ datagroup: noah_card_default_datagroup {
 persist_with: noah_card_default_datagroup
 
 explore: card_bi {}
+
+explore: line_total {}
