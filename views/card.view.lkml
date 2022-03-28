@@ -37,6 +37,11 @@ view: card {
     sql: ${TABLE}.Out + ${TABLE}.`IN` ;;
   }
 
+  dimension: DISCOUNT {
+    type: number
+    sql: ${TABLE}.`IN` - ${TABLE}.Out ;;
+  }
+
   dimension: station {
     type: string
     sql: ${TABLE}.Station ;;
